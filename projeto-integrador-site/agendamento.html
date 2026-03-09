@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Formulário de agendamento de consultas Elo Sênior.">
+    <title>Agendar Consulta - Elo Sênior</title>
+
+    <link rel="icon" href="img/icon.png" type="image/png">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <a href="#conteudo-principal" class="skip-link">Pular para o formulário</a>
+
+    <div class="barra-acessibilidade" role="region" aria-label="Ferramentas de acessibilidade">
+        <div class="container-acessibilidade">
+            <span class="texto-acessibilidade">Tamanho do texto:</span>
+            <button id="btn-diminuir" class="btn-acessibilidade" aria-label="Diminuir tamanho da fonte">A-</button>
+            <button id="btn-aumentar" class="btn-acessibilidade" aria-label="Aumentar tamanho da fonte">A+</button>
+        </div>
+    </div>
+
+    <header class="cabecalho">
+        <div class="container header-flex">
+            <div class="logo-container">
+                <a href="index.html" title="Voltar para o início">
+                    <img src="img/logo.png" alt="Logotipo Elo Sênior" class="img-logo">
+                </a>
+                <span class="nome-logo">Elo <span class="destaque">Sênior</span></span>
+            </div>
+            <nav aria-label="Menu secundário">
+                <ul class="menu">
+                    <li><a href="index.html">Início</a></li>
+                    <li><a href="loja.html">Loja</a></li>
+                    <li><a href="index.html" class="botao-menu">Voltar</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main id="conteudo-principal">
+        <section class="secao-branca">
+            <div class="container largura-formulario">
+                <h1>Agende sua Consulta</h1>
+                <p>Preencha os dados abaixo para reservar seu horário. É simples, rápido e acessível.</p>
+
+                <form id="form-agendamento" action="#" method="POST" novalidate>
+                    <div class="campo-formulario">
+                        <label for="nome">Seu Nome Completo:</label>
+                        <input type="text" id="nome" name="nome" placeholder="Digite seu nome aqui" required autocomplete="name">
+                    </div>
+
+                    <div class="campo-formulario">
+                        <label for="telefone">Seu Telefone (WhatsApp):</label>
+                        <input type="tel" id="telefone" name="telefone" placeholder="(00) 90000-0000" required autocomplete="tel" aria-describedby="ajuda-tel">
+                        <span id="ajuda-tel" class="texto-ajuda">Digite o número com DDD. O campo aceita digitação simples.</span>
+                    </div>
+
+                    <div class="campo-formulario">
+                        <label for="especialista">Qual especialista você precisa?</label>
+                        <select id="especialista" name="especialista" required>
+                            <option value="" disabled selected>Clique para escolher...</option>
+                            <option value="Dra. Ana Clara - Geriatra">Dra. Ana Clara (Geriatra)</option>
+                            <option value="Dr. Roberto Alves - Cardiologista">Dr. Roberto Alves (Cardiologista)</option>
+                            <option value="Dr. Marcos Souza - Fisioterapeuta">Dr. Marcos Souza (Fisioterapeuta)</option>
+                        </select>
+                    </div>
+
+                    <div class="campo-formulario">
+                        <label for="data">Melhor dia para a consulta:</label>
+                        <input type="date" id="data" name="data" required aria-describedby="ajuda-data">
+                        <span id="ajuda-data" class="texto-ajuda">Clique no ícone de calendário para selecionar o dia.</span>
+                    </div>
+
+                    <button type="submit" class="botao-grande botao-bloco">
+                        CONFIRMAR AGENDAMENTO
+                    </button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer class="rodape">
+        <div class="container">
+            <p>&copy; 2026 Elo Sênior.</p>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

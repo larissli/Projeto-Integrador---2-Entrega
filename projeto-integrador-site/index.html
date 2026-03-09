@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="Agendamento fácil de consultas e loja com produtos de apoio ao bem-estar para pessoas idosas. Site com navegação simples, textos claros e foco em acessibilidade.">
+    <title>Elo Sênior - Agendamento de Consultas</title>
+
+    <link rel="icon" href="img/icon.png" type="image/png">
+
+    <link rel="stylesheet" href="css/style.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+
+    <a href="#conteudo-principal" class="skip-link">Pular para o conteúdo principal</a>
+
+    <div class="barra-acessibilidade" role="region" aria-label="Ferramentas de acessibilidade">
+        <div class="container-acessibilidade">
+            <span class="texto-acessibilidade">Tamanho do texto:</span>
+            <button id="btn-diminuir" class="btn-acessibilidade" aria-label="Diminuir tamanho da fonte">A-</button>
+            <button id="btn-aumentar" class="btn-acessibilidade" aria-label="Aumentar tamanho da fonte">A+</button>
+        </div>
+    </div>
+
+    <header class="cabecalho">
+        <div class="container header-flex">
+            <div class="logo-container">
+                <a href="index.html" title="Voltar para o início">
+                    <img src="img/logo.png" alt="Logotipo da Elo Sênior: símbolo azul com duas pessoas idosas e um coração" class="img-logo">
+                </a>
+                <span class="nome-logo">Elo <span class="destaque">Sênior</span></span>
+            </div>
+
+            <nav aria-label="Menu principal do site">
+                <ul class="menu">
+                    <li><a href="index.html" class="ativo">Início</a></li>
+                    <li><a href="#profissionais">Médicos</a></li>
+                    <li><a href="#como-funciona">Como Funciona</a></li>
+                    <li><a href="loja.html">Loja</a></li>
+                    <li><a href="agendamento.html" class="botao-menu" aria-label="Ir para a página de agendamento">Agendar</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main id="conteudo-principal">
+
+        <section class="hero-section">
+            <div class="container">
+                <a href="agendamento.html" class="link-banner">
+                    <img src="img/banner-idosos.png"
+                         alt="Banner com senhora idosa sorrindo durante atendimento de saúde. Clique para agendar uma consulta."
+                         class="img-banner">
+                </a>
+
+                <div class="hero-texto">
+                    <h1>Sua saúde merece atenção sem espera.</h1>
+                    <p>Conectamos você aos melhores médicos e terapeutas da região. Agende sua consulta particular sem filas e com navegação simples.</p>
+                    <a href="agendamento.html" class="botao-grande">AGENDAR CONSULTA AGORA</a>
+                    <p class="nota-seguranca"><i class="fas fa-lock" aria-hidden="true"></i> Site seguro, fácil de usar e acessível.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="como-funciona" class="secao-branca">
+            <div class="container">
+                <h2>Veja como é fácil marcar sua consulta</h2>
+                <div class="passos-grid">
+                    <div class="passo-card">
+                        <i class="fas fa-user-doctor icone-grande" aria-hidden="true"></i>
+                        <h3>1. Escolha</h3>
+                        <p>Veja nossa lista de especialistas disponíveis abaixo.</p>
+                    </div>
+                    <div class="passo-card">
+                        <i class="fas fa-calendar-check icone-grande" aria-hidden="true"></i>
+                        <h3>2. Agende</h3>
+                        <p>Selecione o dia e a hora que fica melhor para você.</p>
+                    </div>
+                    <div class="passo-card">
+                        <i class="fas fa-smile icone-grande" aria-hidden="true"></i>
+                        <h3>3. Pronto!</h3>
+                        <p>Receba a confirmação e os detalhes no seu WhatsApp.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="secao-cinza">
+            <div class="container destaque-loja">
+                <div class="destaque-loja-texto">
+                    <span class="etiqueta-secao">Loja Elo Sênior</span>
+                    <h2>Loja com produtos úteis para o cuidado diário</h2>
+                    <p>Além do agendamento, a Elo Sênior também oferece produtos de apoio ao bem-estar, com compra guiada, pagamento por Pix e processo simples de acompanhar.</p>
+                    <ul class="lista-beneficios">
+                        <li>Botões grandes e fáceis de clicar</li>
+                        <li>Textos claros e objetivos</li>
+                        <li>Fluxo pensado para pessoas idosas</li>
+                    </ul>
+                    <a href="loja.html" class="botao-grande">IR PARA A LOJA</a>
+                </div>
+                <div class="destaque-loja-card" aria-hidden="true">
+                    <div class="mini-resumo-loja">
+                        <i class="fas fa-bag-shopping icone-grande" aria-hidden="true"></i>
+                        <p><strong>Produtos disponíveis:</strong></p>
+                        <p>Medidor de pressão, organizador de medicamentos e almofada ortopédica.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="profissionais" class="secao-branca">
+            <div class="container">
+                <h2>Nossos Especialistas Disponíveis</h2>
+
+                <div class="profissionais-grid">
+                    <article class="card-medico">
+                        <img src="img/Ana Clara.png" alt="Foto da Dra. Ana Clara, médica sorrindo de jaleco branco" class="foto-medico-real">
+                        <div class="info-medico">
+                            <h3>Dra. Ana Clara</h3>
+                            <span class="especialidade">Geriatra</span>
+                            <p>Especialista na saúde integral e bem-estar do idoso.</p>
+                            <a href="agendamento.html" class="botao-pequeno" aria-label="Agendar com Dra. Ana Clara">Agendar</a>
+                        </div>
+                    </article>
+
+                    <article class="card-medico">
+                        <img src="img/Roberto Alves.png" alt="Foto do Dr. Roberto Alves, médico de óculos e jaleco" class="foto-medico-real">
+                        <div class="info-medico">
+                            <h3>Dr. Roberto Alves</h3>
+                            <span class="especialidade">Cardiologista</span>
+                            <p>Cuidado especial com seu coração e pressão arterial.</p>
+                            <a href="agendamento.html" class="botao-pequeno" aria-label="Agendar com Dr. Roberto Alves">Agendar</a>
+                        </div>
+                    </article>
+
+                    <article class="card-medico">
+                        <img src="img/Marcos Souza.png" alt="Foto do Dr. Marcos Souza, fisioterapeuta com roupa azul" class="foto-medico-real">
+                        <div class="info-medico">
+                            <h3>Dr. Marcos Souza</h3>
+                            <span class="especialidade">Fisioterapeuta</span>
+                            <p>Reabilitação motora, exercícios e alívio de dores.</p>
+                            <a href="agendamento.html" class="botao-pequeno" aria-label="Agendar com Dr. Marcos Souza">Agendar</a>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="rodape">
+        <div class="container">
+            <p>&copy; 2026 Elo Sênior.</p>
+            <p>Precisa de ajuda? Ligue: (00) 1234-5678</p>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

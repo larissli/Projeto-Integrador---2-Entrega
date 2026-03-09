@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Confirmação do pedido da loja Elo Sênior.">
+    <title>Pedido Realizado - Loja Elo Sênior</title>
+
+    <link rel="icon" href="img/icon.png" type="image/png">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <a href="#conteudo-principal" class="skip-link">Pular para a confirmação do pedido</a>
+
+    <div class="barra-acessibilidade" role="region" aria-label="Ferramentas de acessibilidade">
+        <div class="container-acessibilidade">
+            <span class="texto-acessibilidade">Tamanho do texto:</span>
+            <button id="btn-diminuir" class="btn-acessibilidade" aria-label="Diminuir tamanho da fonte">A-</button>
+            <button id="btn-aumentar" class="btn-acessibilidade" aria-label="Aumentar tamanho da fonte">A+</button>
+        </div>
+    </div>
+
+    <header class="cabecalho">
+        <div class="container header-flex">
+            <div class="logo-container">
+                <a href="index.html" title="Voltar para o início">
+                    <img src="img/logo.png" alt="Logotipo Elo Sênior" class="img-logo">
+                </a>
+                <span class="nome-logo">Elo <span class="destaque">Sênior</span></span>
+            </div>
+            <nav aria-label="Menu principal">
+                <ul class="menu">
+                    <li><a href="index.html">Início</a></li>
+                    <li><a href="loja.html" class="ativo">Loja</a></li>
+                    <li><a href="agendamento.html">Agendar</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main id="conteudo-principal">
+        <section class="secao-branca secao-confirmacao-pedido">
+            <div class="container largura-confirmacao-pedido">
+                <div class="icone-confirmacao-wrapper">
+                    <i class="fas fa-circle-check icone-confirmacao" aria-hidden="true"></i>
+                </div>
+                <h1>Pedido realizado com sucesso</h1>
+                <p class="texto-destaque-confirmacao">Recebemos seu pedido. Assim que o pagamento for confirmado no sistema, os produtos serão separados e enviados para o endereço informado.</p>
+
+                <div class="caixa-informativa caixa-suave espacamento-inferior caixa-status-pedido">
+                    <p><strong>Status do pedido:</strong> aguardando confirmação de pagamento.</p>
+                    <p><strong>Prazo estimado após confirmação:</strong> de 3 a 7 dias úteis.</p>
+                </div>
+
+                <section class="resumo-final" aria-labelledby="titulo-detalhes-pedido">
+                    <h2 id="titulo-detalhes-pedido">Detalhes do pedido</h2>
+                    <div class="resumo-final-grid">
+                        <div class="resumo-final-item">
+                            <span>Número do pedido</span>
+                            <strong id="confirmacao-pedido">Carregando...</strong>
+                        </div>
+                        <div class="resumo-final-item">
+                            <span>Valor total</span>
+                            <strong id="confirmacao-total">Carregando...</strong>
+                        </div>
+                        <div class="resumo-final-item resumo-final-item-largo">
+                            <span>Itens do pedido</span>
+                            <strong id="confirmacao-produto">Carregando...</strong>
+                        </div>
+                        <div class="resumo-final-item resumo-final-item-largo">
+                            <span>Cliente</span>
+                            <strong id="confirmacao-cliente">Carregando...</strong>
+                        </div>
+                        <div class="resumo-final-item resumo-final-item-largo">
+                            <span>Endereço de entrega</span>
+                            <strong id="confirmacao-endereco">Carregando...</strong>
+                        </div>
+                        <div class="resumo-final-item">
+                            <span>Forma de pagamento</span>
+                            <strong>Pix</strong>
+                        </div>
+                        <div class="resumo-final-item">
+                            <span>Status</span>
+                            <strong id="confirmacao-status">Aguardando confirmação</strong>
+                        </div>
+                    </div>
+                </section>
+
+                <div class="grupo-acoes-confirmacao espacamento-topo">
+                    <a href="loja.html" class="botao-grande">FAZER NOVA COMPRA</a>
+                    <a href="index.html" class="botao-pequeno botao-secundario">VOLTAR AO INÍCIO</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="rodape">
+        <div class="container">
+            <p>&copy; 2026 Elo Sênior.</p>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

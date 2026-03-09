@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Loja Elo Sênior com produtos de apoio ao bem-estar, pagamento por Pix e formulário de entrega simples e acessível.">
+    <title>Loja Elo Sênior - Produtos de Apoio</title>
+
+    <link rel="icon" href="img/icon.png" type="image/png">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <a href="#conteudo-principal" class="skip-link">Pular para a loja</a>
+
+    <div class="barra-acessibilidade" role="region" aria-label="Ferramentas de acessibilidade">
+        <div class="container-acessibilidade">
+            <span class="texto-acessibilidade">Tamanho do texto:</span>
+            <button id="btn-diminuir" class="btn-acessibilidade" aria-label="Diminuir tamanho da fonte">A-</button>
+            <button id="btn-aumentar" class="btn-acessibilidade" aria-label="Aumentar tamanho da fonte">A+</button>
+        </div>
+    </div>
+
+    <header class="cabecalho">
+        <div class="container header-flex">
+            <div class="logo-container">
+                <a href="index.html" title="Voltar para o início">
+                    <img src="img/logo.png" alt="Logotipo Elo Sênior" class="img-logo">
+                </a>
+                <span class="nome-logo">Elo <span class="destaque">Sênior</span></span>
+            </div>
+
+            <nav aria-label="Menu principal da loja">
+                <ul class="menu">
+                    <li><a href="index.html">Início</a></li>
+                    <li><a href="agendamento.html">Agendar</a></li>
+                    <li><a href="loja.html" class="ativo">Loja</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main id="conteudo-principal">
+        <section class="hero-section hero-loja">
+            <div class="container hero-loja-grid">
+                <div class="hero-texto hero-loja-texto">
+                    <span class="etiqueta-secao">Loja Elo Sênior</span>
+                    <h1>Produtos para conforto, autonomia e cuidado diário</h1>
+                    <p>Escolha os produtos, adicione ao carrinho, informe o endereço de entrega e finalize o pedido com <strong>Pix</strong>.</p>
+                    <div class="caixa-informativa caixa-suave">
+                        <p><strong>Compra simples:</strong> monte seu carrinho, confira o resumo do pedido e finalize com poucos passos.</p>
+                    </div>
+                </div>
+
+                <aside class="painel-ajuda-compra" aria-label="Passo a passo da compra">
+                    <h2>Como comprar</h2>
+                    <ol class="lista-passos-compra">
+                        <li>Escolha os produtos.</li>
+                        <li>Adicione ao carrinho.</li>
+                        <li>Preencha os dados de entrega.</li>
+                        <li>Pague por Pix e finalize.</li>
+                    </ol>
+                    <div class="selo-vantagem" aria-label="Benefícios da loja">
+                        <span>Frete grátis</span>
+                        <span>Pagamento por Pix</span>
+                        <span>Compra simples</span>
+                    </div>
+                </aside>
+            </div>
+        </section>
+
+        <section class="secao-branca">
+            <div class="container">
+                <h2>Produtos disponíveis</h2>
+                <p class="intro-loja">Os itens abaixo foram escolhidos por terem relação direta com cuidado diário, organização e conforto.</p>
+
+                <form id="form-loja" class="checkout-grid" novalidate>
+                    <section class="checkout-coluna-principal" aria-labelledby="titulo-produtos">
+                        <section class="grupo-produtos" aria-labelledby="titulo-produtos">
+                            <h2 id="titulo-produtos">Escolha e adicione ao carrinho</h2>
+
+                            <article class="card-produto-loja">
+                                <img src="img/produto-medidor-pressao.png" alt="Medidor digital de pressão com visor grande" class="foto-produto">
+                                <div class="produto-texto">
+                                    <h3 class="produto-titulo">Medidor de Pressão Digital</h3>
+                                    <p class="produto-preco">R$ 189,90</p>
+                                    <p class="produto-descricao">Equipamento com visor amplo, leitura fácil e uso simples no dia a dia.</p>
+                                    <p class="produto-beneficio">Ajuda no acompanhamento da pressão arterial em casa.</p>
+                                    <div class="produto-etiquetas"><span>Visor amplo</span><span>Leitura rápida</span><span>Uso simples</span></div>
+
+                                    <div class="acoes-produto">
+                                        <div class="campo-quantidade">
+                                            <label for="qtd-medidor-pressao">Quantidade</label>
+                                            <input type="number" id="qtd-medidor-pressao" min="1" value="1" inputmode="numeric">
+                                        </div>
+                                        <button type="button" class="botao-pequeno adicionar-carrinho" data-produto="medidor-pressao">ADICIONAR AO CARRINHO</button>
+                                    </div>
+                                </div>
+                            </article>
+
+                            <article class="card-produto-loja">
+                                <img src="img/produto-organizador-remedios.png" alt="Organizador semanal de medicamentos com compartimentos por dia" class="foto-produto">
+                                <div class="produto-texto">
+                                    <h3 class="produto-titulo">Organizador Semanal de Medicamentos</h3>
+                                    <p class="produto-preco">R$ 49,90</p>
+                                    <p class="produto-descricao">Separação por dias da semana para facilitar a rotina e reduzir esquecimentos.</p>
+                                    <p class="produto-beneficio">Ajuda no controle da medicação diária de forma prática.</p>
+                                    <div class="produto-etiquetas"><span>Rotina organizada</span><span>Fácil de usar</span><span>Uso diário</span></div>
+
+                                    <div class="acoes-produto">
+                                        <div class="campo-quantidade">
+                                            <label for="qtd-organizador-remedios">Quantidade</label>
+                                            <input type="number" id="qtd-organizador-remedios" min="1" value="1" inputmode="numeric">
+                                        </div>
+                                        <button type="button" class="botao-pequeno adicionar-carrinho" data-produto="organizador-remedios">ADICIONAR AO CARRINHO</button>
+                                    </div>
+                                </div>
+                            </article>
+
+                            <article class="card-produto-loja">
+                                <img src="img/produto-almofada-ortopedica.png" alt="Almofada ortopédica de apoio para assento" class="foto-produto">
+                                <div class="produto-texto">
+                                    <h3 class="produto-titulo">Almofada Ortopédica de Apoio</h3>
+                                    <p class="produto-preco">R$ 119,90</p>
+                                    <p class="produto-descricao">Apoio confortável para sentar com mais estabilidade em casa, no carro ou no trabalho.</p>
+                                    <p class="produto-beneficio">Pensada para melhorar o conforto durante o uso prolongado do assento.</p>
+                                    <div class="produto-etiquetas"><span>Mais conforto</span><span>Boa estabilidade</span><span>Uso versátil</span></div>
+
+                                    <div class="acoes-produto">
+                                        <div class="campo-quantidade">
+                                            <label for="qtd-almofada-ortopedica">Quantidade</label>
+                                            <input type="number" id="qtd-almofada-ortopedica" min="1" value="1" inputmode="numeric">
+                                        </div>
+                                        <button type="button" class="botao-pequeno adicionar-carrinho" data-produto="almofada-ortopedica">ADICIONAR AO CARRINHO</button>
+                                    </div>
+                                </div>
+                            </article>
+                        </section>
+
+                        <section class="bloco-checkout carrinho-box" aria-labelledby="titulo-carrinho">
+                            <div class="cabecalho-carrinho">
+                                <h2 id="titulo-carrinho">Seu carrinho</h2>
+                                <button type="button" id="limpar-carrinho" class="botao-pequeno botao-secundario">LIMPAR CARRINHO</button>
+                            </div>
+                            <div id="mensagem-carrinho" class="texto-ajuda" aria-live="polite">Adicione os produtos que desejar.</div>
+                            <div id="lista-carrinho"></div>
+                        </section>
+
+                        <fieldset class="bloco-checkout">
+                            <legend>Dados para entrega</legend>
+
+                            <div class="campo-formulario">
+                                <label for="cliente-nome">Nome completo:</label>
+                                <input type="text" id="cliente-nome" name="clienteNome" placeholder="Digite seu nome completo" required autocomplete="name">
+                            </div>
+
+                            <div class="campo-formulario">
+                                <label for="cliente-telefone">Telefone para contato:</label>
+                                <input type="tel" id="cliente-telefone" name="clienteTelefone" placeholder="(00) 90000-0000" required autocomplete="tel" inputmode="numeric" maxlength="15" aria-describedby="ajuda-telefone-loja">
+                                <span id="ajuda-telefone-loja" class="texto-ajuda">Usaremos este número para avisos sobre o pedido e confirmação do pagamento.</span>
+                            </div>
+
+                            <div class="linha-dupla-formulario">
+                                <div class="campo-formulario">
+                                    <label for="cep">CEP:</label>
+                                    <input type="text" id="cep" name="cep" placeholder="00000-000" required autocomplete="postal-code" inputmode="numeric" maxlength="9">
+                                </div>
+                                <div class="campo-formulario">
+                                    <label for="estado">Estado:</label>
+                                    <input type="text" id="estado" name="estado" placeholder="CE" required autocomplete="address-level1" maxlength="2">
+                                </div>
+                            </div>
+
+                            <div class="campo-formulario">
+                                <label for="endereco">Endereço:</label>
+                                <input type="text" id="endereco" name="endereco" placeholder="Rua, avenida ou travessa" required autocomplete="street-address">
+                            </div>
+
+                            <div class="linha-tripla-formulario">
+                                <div class="campo-formulario">
+                                    <label for="numero">Número:</label>
+                                    <input type="text" id="numero" name="numero" placeholder="123" required inputmode="numeric" maxlength="10">
+                                </div>
+                                <div class="campo-formulario campo-amplo">
+                                    <label for="complemento">Complemento:</label>
+                                    <input type="text" id="complemento" name="complemento" placeholder="Casa, apto, bloco, ponto de referência">
+                                </div>
+                            </div>
+
+                            <div class="linha-dupla-formulario">
+                                <div class="campo-formulario">
+                                    <label for="bairro">Bairro:</label>
+                                    <input type="text" id="bairro" name="bairro" placeholder="Digite o bairro" required autocomplete="address-level2">
+                                </div>
+                                <div class="campo-formulario">
+                                    <label for="cidade">Cidade:</label>
+                                    <input type="text" id="cidade" name="cidade" placeholder="Digite a cidade" required autocomplete="address-level2">
+                                </div>
+                            </div>
+                        </fieldset>
+
+                        <fieldset class="bloco-checkout">
+                            <legend>Pagamento por Pix</legend>
+                            <p>Use a chave Pix, o código copiável ou o QR Code abaixo. Depois de concluir a compra, o pedido ficará aguardando a confirmação do pagamento.</p>
+
+                            <div class="pix-box">
+                                <div>
+                                    <p><strong>Chave Pix:</strong></p>
+                                    <p class="pix-chave">pix@elosenior.com.br</p>
+                                </div>
+                                <button type="button" id="copiar-pix" class="botao-pequeno">COPIAR CÓDIGO PIX</button>
+                            </div>
+
+                            <div class="pix-layout">
+                                <div class="pix-codigo-wrapper">
+                                    <label for="codigo-pix" class="rotulo-pix">Código Pix copiável:</label>
+                                    <textarea id="codigo-pix" class="codigo-pix" rows="5" readonly aria-describedby="status-copia"></textarea>
+                                </div>
+
+                                <div class="pix-qr-box">
+                                    <img src="img/pix-qr.png" alt="QR Code para pagamento por Pix" class="pix-qr-img">
+                                </div>
+                            </div>
+
+                            <p id="texto-total-pix" class="texto-ajuda">O valor do Pix acompanha o total do carrinho.</p>
+                            <p id="status-copia" class="texto-ajuda" aria-live="polite">Ao clicar no botão, o código Pix será copiado quando permitido pelo navegador.</p>
+                        </fieldset>
+                    </section>
+
+                    <aside class="checkout-coluna-lateral" aria-labelledby="titulo-resumo-pedido">
+                        <div class="resumo-pedido-box">
+                            <h2 id="titulo-resumo-pedido">Resumo do pedido</h2>
+                            <p class="resumo-observacao">Confira os dados antes de finalizar.</p>
+
+                            <div class="resumo-linha">
+                                <span>Itens:</span>
+                                <strong id="resumo-itens">0</strong>
+                            </div>
+                            <div class="resumo-linha">
+                                <span>Subtotal:</span>
+                                <strong id="resumo-subtotal">R$ 0,00</strong>
+                            </div>
+                            <div class="resumo-linha">
+                                <span>Frete:</span>
+                                <strong>Grátis</strong>
+                            </div>
+                            <div class="resumo-linha">
+                                <span>Pagamento:</span>
+                                <strong>Pix</strong>
+                            </div>
+                            <div class="resumo-total">
+                                <span>Total:</span>
+                                <strong id="resumo-total">R$ 0,00</strong>
+                            </div>
+
+                            <div class="caixa-informativa caixa-pedido">
+                                <h3>Importante</h3>
+                                <p>Depois de finalizar, o pedido ficará em análise até a confirmação do pagamento.</p>
+                            </div>
+
+                            <button type="submit" class="botao-grande botao-bloco" aria-label="Finalizar compra e concluir pedido">FINALIZAR COMPRA</button>
+                        </div>
+                    </aside>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer class="rodape">
+        <div class="container">
+            <p>&copy; 2026 Elo Sênior.</p>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
